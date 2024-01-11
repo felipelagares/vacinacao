@@ -7,7 +7,7 @@ public class User {
     private String UF;
     private String sexo;
     private List<Alergia> alergias;
-
+    private List<Agendas> agendamentos;
 
     public User(String cpf, String uf, String sexo) {
         this.cpf = cpf;
@@ -31,6 +31,7 @@ public class User {
         return alergias;
     }
 
+    public List getAgendamentos(){return agendamentos;}
     public void addAlergia(String alergia) {
         Alergia a = new Alergia();
         a.setName(alergia);
