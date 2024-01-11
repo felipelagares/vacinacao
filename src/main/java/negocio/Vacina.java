@@ -1,5 +1,7 @@
 package negocio;
 
+import java.util.List;
+
 public class Vacina {
     private int doses;
 
@@ -15,6 +17,12 @@ public class Vacina {
        representa de 3 em 3 semanas
     */
     private int intervalo;
+
+    private List<Agendas> agendamentos;
+
+    public List<Agendas> getAgendamentos(){
+        return  agendamentos;
+    }
 
     public int getDoses() {
         return doses;
