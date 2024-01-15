@@ -1,15 +1,25 @@
 package negocio;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public class User {
+
+    private int id;
+    private String nome;
     private String cpf;
     private String UF;
     private String sexo;
     private List<Alergia> alergias;
     private List<Agendas> agendamentos;
 
-    public User(String cpf, String uf, String sexo) {
+    public int getId() {
+        return id;
+    }
+
+    public User(String cpf, String nome, int id, String uf, String sexo) {
+        this.id = id;
+        this.nome = nome;
         this.cpf = cpf;
         this.UF = uf;
         this.sexo = sexo;
@@ -25,6 +35,10 @@ public class User {
 
     public String getUF() {
         return UF;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public List getAlergias() {
