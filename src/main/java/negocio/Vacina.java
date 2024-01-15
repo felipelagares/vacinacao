@@ -3,6 +3,8 @@ package negocio;
 import java.util.List;
 
 public class Vacina {
+
+    private int id;
     private int doses;
 
     /* periodicidade só tem sentido se doses > 1
@@ -26,6 +28,10 @@ public class Vacina {
 
     public int getDoses() {
         return doses;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public int getIntervalo() {
