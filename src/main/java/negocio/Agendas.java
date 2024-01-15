@@ -1,12 +1,18 @@
 package negocio;
 import java.time.LocalDate;
 public class Agendas {
+
+    private int id;
     private LocalDate data;
     private EnumEstadoAgendamento situacao;
     private LocalDate data_situacao;
 
     private  User paciente;
     private Vacina vacina;
+
+    public int getId() {
+        return id;
+    }
 
     public enum EnumEstadoAgendamento{
         AGENDADO(1), REALIZADO(0), CANCELADO(-1);
