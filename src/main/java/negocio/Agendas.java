@@ -7,8 +7,8 @@ public class Agendas {
     private EnumEstadoAgendamento situacao;
     private LocalDate data_situacao;
 
-    private  User paciente;
-    private Vacina vacina;
+    private  int pacienteId;
+    private int vacinaId;
 
     public int getId() {
         return id;
@@ -25,7 +25,9 @@ public class Agendas {
             return valor;
         }
     }
-    public Agendas(LocalDate data) {
+    public Agendas(LocalDate data, int p, int v) {
+        this.pacienteId = p;
+        this.vacinaId = v;
         this.data = data;
         this.situacao = EnumEstadoAgendamento.AGENDADO;
         this.data_situacao = LocalDate.now();
