@@ -1,5 +1,6 @@
 package negocio;
 import java.time.LocalDate;
+@Entity
 public class Agendas {
 
     private int id;
