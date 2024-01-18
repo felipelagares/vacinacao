@@ -1,7 +1,7 @@
 package negocio;
 
 import java.util.List;
-
+@Entity
 public class Vacina {
 
     private int id;
