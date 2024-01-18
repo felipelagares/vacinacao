@@ -20,12 +20,6 @@ public class Vacina {
     */
     private int intervalo;
 
-    private List<Agendas> agendamentos;
-
-    public List<Agendas> getAgendamentos(){
-        return  agendamentos;
-    }
-
     public int getDoses() {
         return doses;
     }

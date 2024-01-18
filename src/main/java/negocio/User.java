@@ -10,8 +10,7 @@ public class User {
     private String cpf;
     private String UF;
     private String sexo;
-    private List<Alergia> alergias;
-    private List<Agendas> agendamentos;
+    private List<Integer> alergias;
 
     public int getId() {
         return id;
@@ -45,10 +44,8 @@ public class User {
         return alergias;
     }
 
-    public List getAgendamentos(){return agendamentos;}
     public void addAlergia(String alergia) {
-        Alergia a = new Alergia();
-        a.setName(alergia);
-        this.alergias.add(a);
+        Alergia a = new Alergia(0, alergia);
+        this.alergias.add(a.getId());
     }
 }

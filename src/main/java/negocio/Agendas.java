@@ -8,6 +8,27 @@ public class Agendas {
     private LocalDate data_situacao;
 
     private  int pacienteId;
+
+    public LocalDate getData() {
+        return data;
+    }
+
+    public int getSituacao() {
+        return situacao.getValor();
+    }
+
+    public LocalDate getData_situacao() {
+        return data_situacao;
+    }
+
+    public int getPacienteId() {
+        return pacienteId;
+    }
+
+    public int getVacinaId() {
+        return vacinaId;
+    }
+
     private int vacinaId;
 
     public int getId() {
