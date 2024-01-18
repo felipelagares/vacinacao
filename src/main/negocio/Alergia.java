@@ -1,5 +1,5 @@
 package negocio;
-
+@Entity
 public class Alergia {
 
     private int id;
