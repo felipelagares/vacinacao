@@ -3,7 +3,8 @@ package negocio;
 import java.util.List;
 @Entity
 public class Vacina {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int doses;
 
