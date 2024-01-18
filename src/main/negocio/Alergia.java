@@ -1,7 +1,8 @@
 package negocio;
 @Entity
 public class Alergia {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
 
