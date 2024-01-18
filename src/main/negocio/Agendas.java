@@ -2,7 +2,8 @@ package negocio;
 import java.time.LocalDate;
 @Entity
 public class Agendas {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private LocalDate data;
     private EnumEstadoAgendamento situacao;
