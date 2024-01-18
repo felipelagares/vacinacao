@@ -2,7 +2,7 @@ package negocio;
 
 import java.time.LocalDate;
 import java.util.List;
-
+@Entity
 public class User {
 
     private int id;
