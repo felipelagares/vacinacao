@@ -11,7 +11,9 @@ public class User {
     private String cpf;
     private String UF;
     private String sexo;
-    private List<Integer> alergias;
+
+    @ManyToMany
+    private List<Alergia> alergias;
 
     public int getId() {
         return id;
@@ -41,12 +43,16 @@ public class User {
         return nome;
     }
 
-    public List getAlergias() {
+    // Métodos para manipulação de alergias
+    public List<Alergia> getAlergias() {
         return alergias;
     }
 
-    public void addAlergia(String alergia) {
-        Alergia a = new Alergia(0, alergia);
-        this.alergias.add(a.getId());
+    public void setAlergias(List<Alergia> alergias) {
+        this.alergias = alergias;
+    }
+
+    public void addAlergia(Alergia alergia) {
+        this.alergias.add(alergia);
     }
 }
